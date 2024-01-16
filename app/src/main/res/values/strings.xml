@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Time Widget</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="date">\t\"date\" : </string>
+    <string name="time">\t\"time\" : </string>
+    <string name="day">\t\"day\" : </string>
+    <string name="details">\t\"details\" : </string>
+    <string name="start_brackets">{</string>
+    <string name="end_brackets">}</string>
+    <string name="date_issue">If date not displayed, remove and upload</string>
+    <string name="time_issue">If time not displayed, remove and upload</string>
+    <string name="day_issue">if day not displayed, remove and upload</string>
+    <string name="month">\t\"month\" : </string>
+</resources>
