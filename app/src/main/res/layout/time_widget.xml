@@ -64,6 +64,14 @@
             android:textColor="@color/value"
             android:textSize="18sp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=","
+                android:textSize="18sp"
+                android:textColor="@color/value"
+                android:fontFamily="monospace"/>
+
     </LinearLayout>
 
     <LinearLayout
