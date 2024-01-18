@@ -1,19 +1,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/black">
+    android:background="@color/black"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:paddingStart="2dp"
+        android:paddingTop="5dp"
         android:text="@string/start_brackets"
         android:textColor="@color/brackets"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:paddingTop="5dp"
-        android:fontFamily="monospace"
-        android:paddingStart="2dp"/>
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -33,14 +34,14 @@
             android:id="@+id/textViewDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/date_issue"
             android:fontFamily="monospace"
+            android:text="@string/date_issue"
             android:textColor="@color/value"
             android:textSize="18sp" />
 
     </LinearLayout>
 
-        <LinearLayout
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -57,20 +58,20 @@
 
         <TextClock
             android:id="@+id/textClockView"
-            android:text="@string/time_issue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
+            android:text="@string/time_issue"
             android:textColor="@color/value"
             android:textSize="18sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=","
-                android:textSize="18sp"
-                android:textColor="@color/value"
-                android:fontFamily="monospace"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text=","
+            android:textColor="@color/value"
+            android:textSize="18sp" />
 
     </LinearLayout>
 
@@ -83,19 +84,19 @@
             android:id="@+id/details"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="monospace"
             android:text="@string/details"
             android:textColor="@color/key"
-            android:fontFamily="monospace"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/detailStartBrackets"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="monospace"
             android:text="@string/start_brackets"
             android:textColor="@color/brackets"
-            android:textSize="18sp"
-            android:fontFamily="monospace"/>
+            android:textSize="18sp" />
 
     </LinearLayout>
 
@@ -108,19 +109,19 @@
             android:id="@+id/day"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:paddingStart="35dp"
             android:text="@string/day"
             android:textColor="@color/key"
-            android:textSize="18sp"
-            android:paddingStart="35dp"
-            android:fontFamily="monospace"/>
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textViewDay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="monospace"
             android:textColor="@color/value"
-            android:textSize="18sp"
-            android:fontFamily="monospace"/>
+            android:textSize="18sp" />
 
     </LinearLayout>
 
@@ -133,19 +134,19 @@
             android:id="@+id/month"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/key"
-            android:text="@string/month"
-            android:textSize="18sp"
             android:fontFamily="monospace"
-            android:paddingStart="35dp"/>
+            android:paddingStart="35dp"
+            android:text="@string/month"
+            android:textColor="@color/key"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textViewMonth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="monospace"
             android:textColor="@color/value"
-            android:textSize="18sp"
-            android:fontFamily="monospace"/>
+            android:textSize="18sp" />
 
     </LinearLayout>
 
@@ -153,21 +154,21 @@
         android:id="@+id/detailEndBrackets"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="},"
         android:fontFamily="monospace"
-        android:textColor="@color/brackets"
         android:paddingStart="35dp"
-        android:textSize="18sp"/>
+        android:text="},"
+        android:textColor="@color/brackets"
+        android:textSize="18sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:paddingStart="2dp"
         android:text="@string/end_brackets"
         android:textColor="@color/brackets"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:paddingStart="2dp"
-        android:fontFamily="monospace"/>
+        android:textStyle="bold" />
 
 
 </LinearLayout>
