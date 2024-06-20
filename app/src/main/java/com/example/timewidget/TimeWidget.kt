@@ -24,11 +24,12 @@ class TimeWidget : AppWidgetProvider() {
     var clockIntent = Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_LAUNCHER)
 
     var clockImpls = arrayOf(
-        arrayOf(
-            "HTC Alarm Clock",
+        arrayOf("HTC Alarm Clock",
             "com.htc.android.worldclock",
-            "com.htc.android.worldclock.WorldClockTabControl"
-        ),
+            "com.htc.android.worldclock.WorldClockTabControl"),
+        arrayOf("OnePlus",
+            "com.oneplus.deskclock",
+            "com.oplus.alarmclock.AlarmClock"),
         arrayOf("Standard Alarm Clock",
             "com.android.deskclock",
             "com.android.deskclock.AlarmClock"),
@@ -54,7 +55,12 @@ class TimeWidget : AppWidgetProvider() {
         ),
         arrayOf("ASUS Tablets",
             "com.asus.deskclock",
-            "com.asus.deskclock.DeskClock")
+            "com.asus.deskclock.DeskClock"),
+        arrayOf(
+            "OnePlus Clock",
+            "com.oneplus.deskclock",
+            "com.oplus.alarmclock.AlarmClock"
+        )
     )
 
     var clockFound= false
@@ -91,8 +97,11 @@ class TimeWidget : AppWidgetProvider() {
             val packageName = clockImpls[i][1]
             val className = clockImpls[i][2]
             try {
+                println("Inside TRY BLOCK")
                 val cn = ComponentName(packageName, className)
-                val aInfo = packageManager.getActivityInfo(cn, PackageManager.GET_META_DATA)
+                println(cn)
+//                val aInfo = packageManager.getActivityInfo(cn, PackageManager.GET_META_DATA)
+                println(packageManager.getActivityInfo(cn, PackageManager.GET_META_DATA))
                 clockIntent.component = cn
                 println("Found $vendor --> $packageName/$className")
                 clockFound = true
